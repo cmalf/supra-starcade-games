@@ -60,7 +60,7 @@ const json2 = {
 const json3 = {
     operationName: "User",
     variables: {
-        auth0Id: "auth0|63ce0d97744fee2241d0a176"
+        auth0Id: config.auth0
     },
     query: "query User($auth0Id: String) { user(auth0Id: $auth0Id) { id auth0Id refCode referralUrl email firstName lastName username phoneNumber country isBanned bannedReason kycStatus totalPoints totalTokens isPhoneNotificationsEnabled isGpcEnabled supraTokenPrice isEmailVerified rankName manualReview createdAt discordId twitterId emailVerificationCode verificationEmailSentAt walletAddress stakingPreference __typename } }"
 };
